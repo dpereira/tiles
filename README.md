@@ -2,6 +2,8 @@
 
 Hacking a crude tile server together.
 
+![tiles](/doc/img/tiles.png)
+
 ## Setup
 
 You will need docker + docker compose.
