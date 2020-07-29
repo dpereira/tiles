@@ -12,7 +12,19 @@ There is a free one available with world data here:
 
 - https://openmaptiles.com/downloads/tileset/osm/?usage=personal
 
-Update `image/tilestache/tilestaches.config` with the local path to the just downloaded mbtiles.
+Update `tilestaches.config` with the local path to the just downloaded mbtiles, like so:
+
+```
+{
+    "cache": {"name": "Test"},
+    "layers": {
+        "world": {
+            "provider": {"name": "mbtiles", "tileset": "/server/<FILENAME HERE>"}
+        }   
+    }
+}
+
+```
 
 Finally:
 
@@ -37,7 +49,3 @@ Or:
  - http://localhost
 
 Voilá.
-
-
-
-
