@@ -12,7 +12,7 @@ new Map({
       source: new VectorTileSource({
         url: '/world/{z}/{x}/{y}.pbf',
         format: new MVT(),
-        maxZoom: 12
+        maxZoom: 30
       })
     })
   ],
