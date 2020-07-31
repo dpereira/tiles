@@ -9,18 +9,19 @@ import MVT from 'ol/format/MVT';
 new Map({
   target: 'map',
   layers: [
-    new TileLayer({
-      source: new XYZ({
-        url: '/world-raster/{z}/{x}/{y}.png',
-        maxZoom: 8
-      })
-    }),
     new VectorTileLayer({
       source: new VectorTileSource({
         url: '/world/{z}/{x}/{y}.pbf',
         format: new MVT(),
         maxZoom: 30
       })
+    }),
+    new TileLayer({
+      source: new XYZ({
+        url: '/world-raster/{z}/{x}/{y}.png',
+        maxZoom: 8,
+      }),
+      opacity: .75
     })
   ],
   view: new View({
