@@ -41,6 +41,9 @@ services:
             - type: bind
               source: ./images/web
               target: /usr/share/nginx/html
+            - type: bind
+              source: /tmp/cache
+              target: /cache
         depends_on:
             - web-builder
             - decompressor-proxy

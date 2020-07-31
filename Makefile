@@ -1,10 +1,12 @@
 
 
+cache:
+	mkdir -p /tmp/cache
 
 build:
 	docker-compose build
 
-run:
+run: cache
 	docker-compose up
 
 stop:
