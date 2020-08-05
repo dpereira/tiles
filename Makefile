@@ -6,6 +6,9 @@ cache:
 build:
 	docker-compose build
 
+update:
+	docker-compose run web-builder
+
 run: cache
 	docker-compose up
 
