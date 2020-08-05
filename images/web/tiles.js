@@ -26,7 +26,7 @@ let map = new Map({
     new TileLayer({
       source: new XYZ({
         url: 'https://tiles{0-3}.planet.com/basemaps/v1/planet-tiles/global_monthly_2019_05_mosaic/{z}/{x}/{y}.png?api_key=9dd6691c3cae4233a5a0116696d29d7d',
-        maxZoom: 30
+        maxZoom: 11
       })
     }),
     new VectorTileLayer({
